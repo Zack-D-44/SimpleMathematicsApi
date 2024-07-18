@@ -8,6 +8,14 @@ const app = express();
 
 app.use('/add', additionRouter);
 
+app.listen(4000, err => {
+    if(err){
+        console.log(`The following error occured when setting up the server ${err}`);
+    }else{
+        console.log('The server is listening on port 4000')
+    }
+})
+
 
 
 
