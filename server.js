@@ -4,6 +4,7 @@ const express = require('express');
 const {additionRouter} = require('./Routes/addition');
 const {subtractionRouter} = require('./Routes/subtraction');
 const {divisionRouter} = require('./Routes/division');
+const {multiplicationRouter} = require('./Routes/multiplication');
 //create express app
 const app = express();
 
@@ -11,6 +12,7 @@ const app = express();
 app.use('/add', additionRouter);
 app.use('/subtract', subtractionRouter);
 app.use('/divide', divisionRouter);
+app.use('/multiply', multiplicationRouter);
 
 app.listen(4000, err => {
     if(err){
