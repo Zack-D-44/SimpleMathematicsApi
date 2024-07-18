@@ -1,14 +1,16 @@
 //require express and all routers
 const express = require('express');
 //requiring all router
-const {additionRouter} = require('./Routes/addition')
-const {subtractionRouter} = require('./Routes/subtraction')
+const {additionRouter} = require('./Routes/addition');
+const {subtractionRouter} = require('./Routes/subtraction');
+const {divisionRouter} = require('./Routes/division');
 //create express app
 const app = express();
 
 //mounting routers to correct routes
 app.use('/add', additionRouter);
 app.use('/subtract', subtractionRouter);
+app.use('/divide', divisionRouter);
 
 app.listen(4000, err => {
     if(err){
