@@ -7,3 +7,8 @@ const verifyType = (type, value1, value2, value3 = 0, value4 = 0) => {
         return true;
     }
 };
+
+//exporting function
+module.exports = {
+    verifyType
+}
