@@ -25,3 +25,7 @@ multiplicationRouter.get('/:value1/:value2', (req, res) => {
         res.status(400).send();
     }
 })
+
+module.exports = {
+    multiplicationRouter
+};
